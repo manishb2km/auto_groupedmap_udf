@@ -45,7 +45,7 @@ res = df.groupby(['class','group']).applyInPandas(standardise_dataframe, schema=
 ```
 
 #### New code
-Let's say you have a simple pandas_udf function as below
+No need to define and specify the schema
 ```sh
 import auto_groupedmap_udf
 res = auto_groupedmap_udf(df=df, groupby_cols=['class','group'], func=standardise_dataframe,repartition_cols=['class','group'])
