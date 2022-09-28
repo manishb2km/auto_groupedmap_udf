@@ -1,4 +1,4 @@
-![Decision Point](https://static.ambitionbox.com/assets/v2/images/rs:fit:1280:960:false:false/bG9jYWw6Ly8vbG9nb3Mvb3JpZ2luYWxzL2RlY2lzaW9uLXBvaW50LmpwZw.png)
+![Decision Point](https://www.organindia.org/wp-content/uploads/2017/06/AwarenesssessionatDecisionPoint-1.jpg)
 
 # Automatic schema generation for pandas_udf
 
