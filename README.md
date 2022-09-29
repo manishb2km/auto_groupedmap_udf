@@ -50,7 +50,7 @@ No need to define and specify the schema
 ```sh
 from autoudf import groupedmappandas
 res = groupedmappandas.auto_groupedmap_udf(df=df, groupby_cols=['class','group'], func=standardise_dataframe,repartition_cols=['class','group'])
-res.compute()
+returndata = res.compute()
 ```
 
 #### Additional utilities
