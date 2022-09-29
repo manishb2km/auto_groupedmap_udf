@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+autoudf/__init__.py
+autoudf/groupedmappandas.py
+autoudf.egg-info/PKG-INFO
+autoudf.egg-info/SOURCES.txt
+autoudf.egg-info/dependency_links.txt
+autoudf.egg-info/top_level.txt

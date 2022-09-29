@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: autoudf
+Version: 0.0.4
+Home-page: https://github.com/manishb2km/auto_groupedmap_udf
+Author: Manish Sharma
+Author-email: manishb2km@gmail.com
+License: MIT
+Keywords: spark automatic schema pandas udf
+License-File: LICENSE
