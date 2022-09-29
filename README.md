@@ -19,7 +19,7 @@ auto_groupedmap_udf requires Python v3.7+ to run. Not tested on earlier versions
 Install through pip
 
 ```sh
-pip install auto_groupedmap_udf
+pip install autoudf
 ```
 
 ## How to use
@@ -47,8 +47,8 @@ res = df.groupby(['class','group']).applyInPandas(standardise_dataframe, schema=
 #### New code
 No need to define and specify the schema
 ```sh
-import auto_groupedmap_udf
-res = auto_groupedmap_udf(df=df, groupby_cols=['class','group'], func=standardise_dataframe,repartition_cols=['class','group'])
+from autoudf import groupedmappandas
+res = groupedmappandas.auto_groupedmap_udf(df=df, groupby_cols=['class','group'], func=standardise_dataframe,repartition_cols=['class','group'])
 ```
 
 #### Additional utilities

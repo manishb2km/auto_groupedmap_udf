@@ -1,7 +1,0 @@
-README.md
-setup.cfg
-setup.py
-src/auto_groupedmap_udf.egg-info/PKG-INFO
-src/auto_groupedmap_udf.egg-info/SOURCES.txt
-src/auto_groupedmap_udf.egg-info/dependency_links.txt
-src/auto_groupedmap_udf.egg-info/top_level.txt
