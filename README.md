@@ -42,6 +42,7 @@ schema = StructType([
 ])
 
 res = df.groupby(['class','group']).applyInPandas(standardise_dataframe, schema=schema)
+res.display()
 ```
 
 #### New code
@@ -49,6 +50,7 @@ No need to define and specify the schema
 ```sh
 from autoudf import groupedmappandas
 res = groupedmappandas.auto_groupedmap_udf(df=df, groupby_cols=['class','group'], func=standardise_dataframe,repartition_cols=['class','group'])
+res.compute()
 ```
 
 #### Additional utilities
