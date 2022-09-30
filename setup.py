@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='autoudf',
-    version='0.0.4',
+    version='0.0.5',
     license='MIT',
     author="Manish Sharma",
     author_email='manishb2km@gmail.com',

@@ -2,7 +2,7 @@
 
 # Automatic schema generation for pandas_udf
 
-auto_groupedmap_udf is a utility to enable agile development on pySpark grouped map pandas_udfs. This utility automatically generates schemas for grouped map udfs in pySpark on the fly.
+autoudf is a utility to enable agile development on pySpark grouped map pandas_udfs. This utility automatically generates schemas for grouped map udfs in pySpark on the fly.
 
 ## Features
 
@@ -14,7 +14,7 @@ auto_groupedmap_udf is a utility to enable agile development on pySpark grouped 
 
 ## Installation
 
-auto_groupedmap_udf requires Python v3.7+ to run. Not tested on earlier versions.
+autoudf requires Python v3.7+ to run. Not tested on earlier versions.
 
 Install through pip
 

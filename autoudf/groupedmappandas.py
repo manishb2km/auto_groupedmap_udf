@@ -17,11 +17,28 @@ class auto_groupedmap_udf():
 		self.groupby_cols = groupby_cols
 		self.repartition_cols = repartition_cols
 		self.func = func
+		self.datatype_mapping = {}
+		
+		for key in ["object","string_","unicode_"]:
+			self.datatype_mapping[key] = StringType
+		for key in ["int64","int_","int8","int16","int32","uint8","uint16","uint32","uint64"]:
+			self.datatype_mapping[key] = IntegerType
+		for key in ["float64","float","float_","float16","float32","float64"]:
+			self.datatype_mapping[key] = DoubleType
+		for key in ["bool","bool_"]:
+			self.datatype_mapping[key] = BooleanType
+		for key in ["datetime64","datetime64[ns]"]:
+			self.datatype_mapping[key] = TimestampType
+
+		"""
 		self.datatype_mapping = {"float64": DoubleType,
 								   "object":StringType,
 								   "int64":IntegerType,
 								   "bool":BooleanType,
-								   "datetime64": TimestampType}
+								   "datetime64": TimestampType
+								   ""}
+		"""
+		
 		#partitioning upfront
 		if self.repartition_cols is not None:
 			self.df = self.df.repartition(auto_groupedmap_udf.get_num_partitions(self.df, self.repartition_cols), self.repartition_cols)
